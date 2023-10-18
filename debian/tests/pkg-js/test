@@ -1,0 +1,6 @@
+# Autopkgtest hook
+[ -e node_modules/@sinclair/typebox ] || pkgjs-ln @sinclair/typebox
+ts-node example/index.ts
+
+# For later: needs ajs-formats
+#mocha -r ts-node/register spec/schema/index.ts

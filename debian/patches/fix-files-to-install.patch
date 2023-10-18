@@ -1,0 +1,18 @@
+Description: fix files to install
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-04-27
+
+--- a/package.json
++++ b/package.json
+@@ -16,6 +16,10 @@
+     "type": "git",
+     "url": "https://github.com/sinclairzx81/typebox"
+   },
++  "files": [
++    "typebox.d.ts",
++    "typebox.js"
++  ],
+   "scripts": {
+     "clean": "hammer task clean",
+     "format": "hammer task format",
